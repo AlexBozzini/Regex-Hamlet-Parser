@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class HamletParserTest {
@@ -15,17 +17,31 @@ public class HamletParserTest {
 
     @Test
     public void testChangeHamletToLeon() {
+        // given
+        // when
+        // then
     }
 
     @Test
     public void testChangeHoratioToTariq() {
+        // given
+        // when
+        // then
     }
 
     @Test
     public void testFindHoratio() {
+        // given
+        HamletParser hamletParser = new HamletParser();
+        String text = hamletParser.getHamletData();
+        // when
+        // then
     }
 
     @Test
     public void testFindHamlet() {
+        // given
+        // when
+        // then
     }
 }

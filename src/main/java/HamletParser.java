@@ -16,7 +16,7 @@ public class HamletParser {
     private String loadFile(){
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("hamlet.txt").getFile());
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder();
 
         try(Scanner scanner = new Scanner(file)){
             while(scanner.hasNextLine()){
@@ -24,7 +24,6 @@ public class HamletParser {
                 result.append(line).append("\n");
             }
 
-            scanner.close();
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -35,5 +34,13 @@ public class HamletParser {
     public String getHamletData(){
         return hamletData;
     }
+
+    public void changeHamletToLeon(){}
+
+    public void changeHoratioToTariq(){}
+
+    public void findHoratio(){}
+
+    public void findHamlet(){}
 
 }
